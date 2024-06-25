@@ -1,0 +1,150 @@
+---
+import ProjectLayout from "../../layout/ProjectLayout.astro";
+import { getEntry } from "astro:content";
+
+const { slug } = Astro.params;
+
+if (slug === undefined) {
+  throw new Error("Slug is requerid");
+}
+
+const entry = await getEntry("proyecto", slug);
+
+if (entry === undefined) {
+  return Astro.redirect("/404");
+}
+
+const { Content } = await entry.render();
+---
+
+<ProjectLayout>
+  <h3 class="text-black text-3xl text-center font-bold mb-5 mt-12">
+    Proceso UX UI Design - {entry.data.title}
+  </h3>
+  <p class="text-center mt-8 mb-6 font-bold">{entry.data.subtitle}</p>
+  <img
+    class="mx-auto w-6/12 mb-12"
+    src={entry.data.imgpreview}
+    alt="descripcion del proyecto"
+  />
+  <p class="max-w-lg mx-auto mt-6">
+    {entry.data.description}
+  </p>
+  <!-- Competitive Analysis -->
+  <div class="my-20 space-y-3">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+      Competitive Analysis
+    </h5>
+    <p class="max-w-3xl m-auto">{entry.data.infanalisi}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imganalisis} alt="" />
+  </div>
+  <!-- Interviews -->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Interviews</h5>
+    <p class="max-w-3xl m-auto">{entry.data.infinterview}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imginterview} alt="" />
+  </div>
+  <!-- Site Map-->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Site Map</h5>
+    <p class="max-w-3xl m-auto">{entry.data.infsm}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imgsm} alt="" />
+  </div>
+  <!-- User Flow -->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">User Flow</h5>
+    <p class="max-w-3xl m-auto">{entry.data.infuf}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imguf} alt="" />
+  </div>
+  <!-- Low Fidelity Wireframe -->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+      Lo-Fi Wireframe
+    </h5>
+    <p class="max-w-3xl m-auto">{entry.data.inflwireframe}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imglwireframe} alt="" />
+  </div>
+  <!-- Mi-Fi Wireframe -->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+      Mi-Fi Wireframe
+    </h5>
+    <p class="max-w-3xl m-auto">{entry.data.infmwireframe}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imgmwireframe} alt="" />
+  </div>
+  <h3 class="text-3xl text-center text-black underline font-black">
+    Diseno UI
+  </h3>
+  <!-- Typography and Colors -->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+      Typography and Colors
+    </h5>
+    <p class="max-w-3xl m-auto">{entry.data.inftc}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imgtc} alt="" />
+  </div>
+  <!-- System Grid -->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">System Grid</h5>
+    <p class="max-w-3xl m-auto">{entry.data.infgrid}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imggrid} alt="" />
+  </div>
+  <!-- Icons -->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Some Icons</h5>
+    <p class="max-w-3xl m-auto">{entry.data.inficons}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imgicons} alt="" />
+  </div>
+  <!-- Components -->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+      Some Components
+    </h5>
+    <p class="max-w-3xl m-auto">{entry.data.infcomponent}</p>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imgcomponent} alt="" />
+  </div>
+  <!-- High Fidelity Prototype -->
+  <div class="my-20 space-y-4">
+    <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+      Hi-Fi Prototype
+    </h5>
+    <p class="max-w-3xl m-auto">{entry.data.infprocess}</p>
+    <div class="max-w-3xl m-auto space-y-1">
+      {
+        entry.data.urlpreview && (
+          <>
+            <p>
+              Para ver una preview del funcionamento darle clic
+              <a
+                class="font-black"
+                href={entry.data.urlpreview}
+                target="_blank"
+                title="Visitar Proyecto"
+              >
+                aqui
+              </a>
+            </p>
+          </>
+        )
+      }
+      {
+        entry.data.urlfigma && (
+          <>
+            <p>
+              Para ver el prototipo completo puede darle clic
+              <a
+                class="font-black"
+                href={entry.data.urlfigma}
+                target="_blank"
+                title="Visitar Figma del proyecto"
+              >
+                aqui
+              </a>
+            </p>
+          </>
+        )
+      }
+    </div>
+    <img class="w-6/12 m-auto p-10" src={entry.data.imgprocess} alt="" />
+  </div>
+</ProjectLayout>
