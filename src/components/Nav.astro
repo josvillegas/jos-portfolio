@@ -1,42 +1,42 @@
 ---
 const navItems = [
   {
-    title: "Inicio",
-    label: "inicio",
+    title: "Work",
+    label: "work",
     url: "/",
   },
   {
-    title: "Proyectos",
-    label: "proyectos",
-    url: "proyectos",
+    title: "About",
+    label: "about",
+    url: "about",
   },
   {
-    title: "Experiencia",
-    label: "experiencia",
+    title: "Experience",
+    label: "experience",
     url: "experiencia",
   },
 ];
 ---
 
-<header
-  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-3"
->
-  <nav
-    class="flex px-3 text-sm font-medium rounded-full text-black justify-center items-center"
-  >
-    {
-      navItems.map((link) => (
-        <a
-          class="relative block px-2 py-2 transition hover:text-yellow-400"
-          aria-label={link.label}
-          href={link.url}
-        >
-          {link.title}
-        </a>
-      ))
-    }
-  </nav>
-</header>
+<div class="flex items-center justify-center mt-12 bg-transparent">
+  <header class="fixed z-10">
+    <nav
+      class="flex px-3 text-sm font-medium rounded-full text-black justify-center items-center"
+    >
+      {
+        navItems.map((link) => (
+          <a
+            class="relative block px-2 py-2 transition hover:text-yellow-400"
+            aria-label={link.label}
+            href={link.url}
+          >
+            {link.title}
+          </a>
+        ))
+      }
+    </nav>
+  </header>
+</div>
 
 <style>
   nav {

@@ -1,101 +1,47 @@
 ---
 import SectionContainer from "../components/SectionContainer.astro";
 import MainLayout from "../layout/MainLayout.astro";
-import GitHub from "../icons/Github.astro";
-import Website from "../icons/Website.astro";
+import { type CollectionEntry, getCollection } from "astro:content";
+
+const allProjects: CollectionEntry<"proyecto">[] =
+  await getCollection("proyecto");
 ---
 
-<MainLayout title="index" description="descrip">
+<MainLayout title="Portfolio Jos Villegas" description="UI Designer">
   <SectionContainer>
-    <div
-      class="w-full flex flex-col-reverse items-center justify-between gap-10 md:gap-0 md:space-y-0 md:flex-row mb-24"
-    >
-      <div class="flex flex-col gap-4">
-        <span>
-          <div
-            class="inline-flex justify-center items-center rounded-xl bg-slate-800 text-white border-green-700 border-2 px-3 py-0.5 text-xs"
-          >
-            Disponible para trabajar
+    {
+      allProjects.map((proyecto) => (
+        <div class="flex flex-col-reverse gap-10 justify-center items-center mb-28 p-3 md:flex-row">
+          <div class="flex flex-col gap-4 text-black">
+            <h3 class="text-3xl font-bold">{proyecto.data.title}</h3>
+            <p class="text-sm text-black max-w-lg">
+              {proyecto.data.infprincipal}
+            </p>
+            <span />
+            <div class="flex gap-2">
+              <div class="">
+                <strong>Industry: </strong>
+                {proyecto.data.tags.map((tag: string, index: number) => (
+                  <span>{tag}</span>
+                ))}
+              </div>
+            </div>
           </div>
-        </span>
-        <h2 class="text-white text-5xl font-bold">Soy Jos Lee Villegas</h2>
-        <p class="text-white text-xl max-w-lg p-1">
-          <strong class="text-amber-300 font-bold">Diseñador UI y Web</strong> con
-          más de 2 años de experiencia en el rubro a través del dictado de talleres
-          y la creación de proyectos personales.
-        </p>
-        <div class="flex flex-row gap-2">
           <a
-            class="inline-flex justify-center items-center rounded-lg bg-slate-700 p-2 text-white border border-white"
-            href="https://github.com/josvillegas"
-            target="_blank"
-            title="Visitar github de josvillegas"
-            aria-label="Github"
-            ><GitHub />
+            class="w-6/12 rounded-xl hover:scale-105 transition duration-500"
+            href={proyecto.slug}
+          >
+            <img
+              class="rounded-lg w-full h-full "
+              src={"/images/" + proyecto.data.imgpreview}
+              alt="proyecto01"
+              width="100%"
+              height="100%"
+              title={`Imagen del proyecto - ${proyecto.data.title}`}
+            />
           </a>
-          <a
-            class="inline-flex justify-center items-center rounded-lg bg-slate-700 p-2 text-white border border-white"
-            href=""
-            target="_blank"
-            title="Visitar sitioweb de josvillegas"
-            aria-label="Sitio Web"><Website /></a
-          >
-          <a
-            download
-            class="inline-flex justify-center items-center rounded-lg bg-slate-700 p-2 text-white border border-white"
-            href="CV_JosLeeVillegasPacheco.pdf"
-            title="descargar cv de jos"
-            aria-label="Descargar CV">Descargar CV</a
-          >
         </div>
-      </div>
-      <div class="w-[160px] h-[160px] p-1">
-        <img
-          class="rounded-full size-40 p-1"
-          src="perfilcv.webp"
-          alt="imagen cv jos"
-          title="Imagen de jos villegas"
-        />
-      </div>
-    </div>
-
-    <div class="flex flex-col gap-10 justify-between items-center mb-28">
-      <div class="flex flex-col gap-1.5 text-white w-10/12">
-        <h3 class="text-3xl font-bold text-center">Title</h3>
-        <p class="text-sm text-gray-400 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          autem nostrum est at nesciunt tempore iure? Quam voluptates quod
-          obcaecati magnam. Quam nisi accusantium saepe tenetur ut voluptas,
-          deleniti ratione?
-        </p>
-        <span></span>
-        <div class="flex gap-2 items-center">
-          <div class="mx-auto">
-            <strong>Industry: </strong>
-            <span>Medical</span>
-          </div>
-        </div>
-      </div>
-      <div
-        class="w-10/12 border-4 border-gray-700 rounded-xl hover:scale-105 transition duration-500"
-      >
-        <img
-          class="rounded-lg w-full h-full"
-          src="images/ProjectSportUPeU.webp"
-          alt="proyecto01"
-          width="100%"
-          height="100%"
-          title="proyecto"
-        />
-      </div>
-      <div class="flex mx-auto">
-        <a
-          class="bg-[#243B55] text-white py-1 px-4 rounded-lg border-2 border-white hover:text-[#243B55] hover:bg-white"
-          href="proyectos"
-        >
-          ver todos los proyectos
-        </a>
-      </div>
-    </div>
+      ))
+    }
   </SectionContainer>
 </MainLayout>
