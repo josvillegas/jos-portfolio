@@ -7,10 +7,11 @@ import SectionContainer from "../../components/SectionContainer.astro";
   <SectionContainer>
     <div class="mb-5">
       <span
-        class="bg-green-800 py-1 px-4 rounded-xl text-white border-2 border-green-950"
+        class="bg-green-400 py-1 px-4 rounded-xl text-green-800 border-2 border-green-800 font-bold text-sm md:text-base"
         >Available to work</span
       >
     </div>
+    <h3 class="text-4xl font-bold text-gray-900 mt-5 mb-3">Who I am?</h3>
     <section
       class="flex flex-col-reverse items-center justify-center md:flex-row gap-x-20 gap-y-10"
     >
@@ -27,13 +28,42 @@ import SectionContainer from "../../components/SectionContainer.astro";
           doloribus assumenda architecto reiciendis deserunt fuga quasi aut eius
           placeat.
         </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          aliquid doloremque dolorum, ex tempora nesciunt iure, praesentium ea
+          facilis suscipit, asperiores repellendus fugit fugiat debitis amet
+          maxime exercitationem blanditiis. Earum?
+        </p>
       </div>
       <img
-        class="rounded-full"
+        class="rounded-full size-40 sm:size-52 mt-10 sm:mt-0"
         src="perfilcv.webp"
         alt="Imagen de Jos Villegas"
         title="Imagen de Jos Villegas"
       />
+    </section>
+
+    <h3 class="text-3xl font-bold text-gray-900 mt-8 mb-3">Skillset</h3>
+    <section
+      class="flex flex-col items-start gap-x-60 sm:flex-row sm:items-center"
+    >
+      <ul class="list-disc ml-8 space-y-2">
+        <li>UX Design</li>
+        <li>UI Design</li>
+      </ul>
+      <ul class="list-disc ml-8 space-y-2 sm:mt-0 mt-2">
+        <li>Wireframing</li>
+        <li>Design Systems</li>
+      </ul>
+    </section>
+
+    <h3 class="text-3xl font-bold text-gray-900 mt-8 mb-3">Tools</h3>
+    <section class="flex items-start sm:items-center">
+      <ul class="list-disc ml-8 space-y-2">
+        <li>Figma</li>
+        <li>Miro</li>
+        <li>Adobe XD</li>
+      </ul>
     </section>
   </SectionContainer>
 </MainLayout>
