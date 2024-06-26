@@ -1,5 +1,6 @@
 ---
 import SectionContainer from "../components/SectionContainer.astro";
+import Website from "../icons/Website.astro";
 import MainLayout from "../layout/MainLayout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
@@ -9,12 +10,36 @@ const allProjects: CollectionEntry<"proyecto">[] =
 
 <MainLayout title="Portfolio Jos Villegas" description="UI Designer">
   <SectionContainer>
+    <section class="flex py-8 px-10 mb-10">
+      <div class="flex flex-col gap-y-3">
+        <h1 class="text-5xl font-bold">Hi there, I'm Jos Lee</h1>
+        <p class="text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad eius
+          dolore architecto temporibus sapiente iusto corrupti! Distinctio
+          perspiciatis rerum nobis corporis numquam dolorum asperiores repellat,
+          est, minima autem dolorem?
+        </p>
+        <div class="mt-3">
+          <a
+            class="bg-gray-800 text-white py-2 px-4 rounded-lg font-bold hover:bg-gray-950"
+            href="about">Learn more</a
+          >
+        </div>
+      </div>
+    </section>
+    <span
+      class="flex items-center text-4xl px-2 font-black text-gray-900 mb-12 gap-x-3"
+    >
+      <Website />Recent Projects
+    </span>
     {
       allProjects.map((proyecto) => (
-        <div class="flex flex-col-reverse gap-10 justify-center items-center mb-28 p-3 md:flex-row">
-          <div class="flex flex-col gap-4 text-black">
-            <h3 class="text-3xl font-bold">{proyecto.data.title}</h3>
-            <p class="text-sm text-black max-w-lg">
+        <div class="flex flex-col-reverse gap-x-12 gap-y-6 justify-center items-center mb-16 md:mb-20 p-3 md:flex-row">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-3xl font-bold text-gray-700">
+              {proyecto.data.title}
+            </h3>
+            <p class="text-sm text-gray-600 max-w-md">
               {proyecto.data.infprincipal}
             </p>
             <span />
@@ -28,7 +53,7 @@ const allProjects: CollectionEntry<"proyecto">[] =
             </div>
           </div>
           <a
-            class="w-6/12 rounded-xl hover:scale-105 transition duration-500"
+            class="w-11/12 rounded-xl hover:scale-105 transition duration-500 md:w-6/12"
             href={proyecto.slug}
           >
             <img

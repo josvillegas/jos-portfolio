@@ -19,16 +19,19 @@ const { Content } = await entry.render();
 
 <ProjectLayout>
   <h3 class="text-black text-3xl text-center font-bold mb-5 mt-12">
-    Proceso UX UI Design - {entry.data.title}
+    Process UX UI Design - {entry.data.title}
   </h3>
-  <p class="text-center mt-8 mb-6 font-bold">{entry.data.subtitle}</p>
+  <p class="text-center mt-8 mb-6 font-semibold text-xl">
+    {entry.data.subtitle}
+  </p>
   <img
-    class="mx-auto w-6/12 mb-12"
+    class="mx-auto w-10/12 mb-12 md:w-6/12"
     src={entry.data.imgpreview}
-    alt="descripcion del proyecto"
+    alt={`Preview image from ${entry.data.title}`}
+    title={`Preview image from ${entry.data.title}`}
   />
-  <p class="max-w-lg mx-auto mt-6">
-    {entry.data.description}
+  <p class="max-w-xl mx-auto mt-6 italic text-xl font-semibold">
+    {`"${entry.data.description}..."`}
   </p>
   <!-- Competitive Analysis -->
   <div class="my-20 space-y-3">
@@ -36,25 +39,45 @@ const { Content } = await entry.render();
       Competitive Analysis
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.infanalisi}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imganalisis} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imganalisis}
+      alt={`Preview image from ${entry.data.title}'s analysis`}
+      title={`Preview image from ${entry.data.title}'s analysis`}
+    />
   </div>
   <!-- Interviews -->
   <div class="my-20 space-y-4">
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Interviews</h5>
     <p class="max-w-3xl m-auto">{entry.data.infinterview}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imginterview} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imginterview}
+      alt={`Preview image from ${entry.data.title}'s interview`}
+      title={`Preview image from ${entry.data.title}'s interview`}
+    />
   </div>
   <!-- Site Map-->
   <div class="my-20 space-y-4">
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Site Map</h5>
     <p class="max-w-3xl m-auto">{entry.data.infsm}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imgsm} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imgsm}
+      alt={`Preview image from ${entry.data.title}'s site map`}
+      title={`Preview image from ${entry.data.title}'s site map`}
+    />
   </div>
   <!-- User Flow -->
   <div class="my-20 space-y-4">
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">User Flow</h5>
     <p class="max-w-3xl m-auto">{entry.data.infuf}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imguf} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imguf}
+      alt={`Preview image from ${entry.data.title}'s user flow`}
+      title={`Preview image from ${entry.data.title}'s user flow`}
+    />
   </div>
   <!-- Low Fidelity Wireframe -->
   <div class="my-20 space-y-4">
@@ -62,7 +85,12 @@ const { Content } = await entry.render();
       Lo-Fi Wireframe
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.inflwireframe}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imglwireframe} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imglwireframe}
+      alt={`Preview image from ${entry.data.title}'s Lo-Fi Wireframe`}
+      title={`Preview image from ${entry.data.title}'s Lo-Fi Wireframe`}
+    />
   </div>
   <!-- Mi-Fi Wireframe -->
   <div class="my-20 space-y-4">
@@ -70,7 +98,12 @@ const { Content } = await entry.render();
       Mi-Fi Wireframe
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.infmwireframe}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imgmwireframe} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imgmwireframe}
+      alt={`Preview image from ${entry.data.title}'s Me-Fi Wireframe`}
+      title={`Preview image from ${entry.data.title}'s Me-Fi Wireframe`}
+    />
   </div>
   <h3 class="text-3xl text-center text-black underline font-black">
     Diseno UI
@@ -81,19 +114,34 @@ const { Content } = await entry.render();
       Typography and Colors
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.inftc}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imgtc} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imgtc}
+      alt={`Preview image from ${entry.data.title}'s Typography and Colors`}
+      title={`Preview image from ${entry.data.title}'s Typography and Colors`}
+    />
   </div>
   <!-- System Grid -->
   <div class="my-20 space-y-4">
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">System Grid</h5>
     <p class="max-w-3xl m-auto">{entry.data.infgrid}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imggrid} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imggrid}
+      alt={`Preview image from ${entry.data.title}'s System Grid`}
+      title={`Preview image from ${entry.data.title}'s System Grid`}
+    />
   </div>
   <!-- Icons -->
   <div class="my-20 space-y-4">
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Some Icons</h5>
     <p class="max-w-3xl m-auto">{entry.data.inficons}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imgicons} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imgicons}
+      alt={`Preview image from ${entry.data.title}'s Icons`}
+      title={`Preview image from ${entry.data.title}'s Icons`}
+    />
   </div>
   <!-- Components -->
   <div class="my-20 space-y-4">
@@ -101,7 +149,12 @@ const { Content } = await entry.render();
       Some Components
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.infcomponent}</p>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imgcomponent} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imgcomponent}
+      alt={`Preview image from ${entry.data.title}'s Components`}
+      title={`Preview image from ${entry.data.title}'s Components`}
+    />
   </div>
   <!-- High Fidelity Prototype -->
   <div class="my-20 space-y-4">
@@ -114,14 +167,14 @@ const { Content } = await entry.render();
         entry.data.urlpreview && (
           <>
             <p>
-              Para ver una preview del funcionamento darle clic
+              To see the website click
               <a
                 class="font-black"
                 href={entry.data.urlpreview}
                 target="_blank"
                 title="Visitar Proyecto"
               >
-                aqui
+                here
               </a>
             </p>
           </>
@@ -131,20 +184,25 @@ const { Content } = await entry.render();
         entry.data.urlfigma && (
           <>
             <p>
-              Para ver el prototipo completo puede darle clic
+              To see the complete prototype click
               <a
                 class="font-black"
                 href={entry.data.urlfigma}
                 target="_blank"
                 title="Visitar Figma del proyecto"
               >
-                aqui
+                here
               </a>
             </p>
           </>
         )
       }
     </div>
-    <img class="w-6/12 m-auto p-10" src={entry.data.imgprocess} alt="" />
+    <img
+      class="w-10/12 m-auto p-2"
+      src={entry.data.imgprocess}
+      alt={`Preview image from ${entry.data.title}'s Hi-Fi Wireframe`}
+      title={`Preview image from ${entry.data.title}'s Hi-Fi Wireframe`}
+    />
   </div>
 </ProjectLayout>
