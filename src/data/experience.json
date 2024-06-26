@@ -2,41 +2,41 @@
   "experiencie": [
     {
       "name": "Dictado de Taller UI Desing",
-      "position": "Diseñador UI",
-      "startDate": "2021-03-12",
-      "endDate": "2023-12-20",
-      "summary": "Encargado de dictar el curso taller de UI Design en el colegio Sollertia, fomenté el Diseño de sitios web o aplicaciones móbiles como ayuda a las soluciones propuestas de cada alumno impulsando el uso de su creatividad",
+      "position": "UI Designer",
+      "startDate": "2021",
+      "endDate": "2023",
+      "summary": "In charge of teaching the UI Design workshop course at the Sollertia school, I promoted the Design of websites or mobile applications as an aid to the proposed solutions of each student, promoting the use of their creativity",
       "highlights": [
-        "Enseñar los principios básicos de diseño UI",
-        "Crear vocetos que serviran de ayuda para los futuros diseños",
-        "Crear diseños amigables y vistosis en Figma y/o Adobe XD",
-        "Verificar que los diseños cumplan las necesidades solicitadas"
+        "Teach basic UI design principles",
+        "Create sketches that will help with future designs",
+        "Create friendly and attractive designs in Figma and/or Adobe XD",
+        "Verify that the design meets the requested needs"
       ]
     },
     {
       "name": "Dictado de Taller UI Desing",
-      "position": "Diseñador Web",
-      "startDate": "2021-03-12",
-      "endDate": "2023-12-20",
-      "summary": "Encargado de dictar el curso taller de Desarrollo Web en el colegio Sollertia, fomenté la creación de sitios web previamente diseñados por cada estudiante, impulsando su lógica y creatividad mediante el uso del código de etiquetas HTML y lenguaje de estilos CSS",
+      "position": "Web Designer",
+      "startDate": "2021",
+      "endDate": "2023",
+      "summary": "In charge of teaching the Web Development workshop course at the Sollertia school, I encouraged the creation of websites previously designed by each student, promoting their logic and creativity through the use of HTML tag code and CSS styling language",
       "highlights": [
-        "Enseñar los principios básicos de diseño Web",
-        "Conocer como los diseños UI sirven de base para los futuros diseños realizados con código web",
-        "Crea diseños web con HTML",
-        "Añade estilos con CSS a los diseños ya realizadas anteriormente"
+        "Teach basic Web design principles",
+        "Know how UI designs serve as a basis for future designs made with web code",
+        "Create web designs with HTML",
+        "Add styles with CSS to previously made designs"
       ]
     },
     {
       "name": "Dictado de Taller UI Desing",
-      "position": "Diseñador UI",
-      "startDate": "2021-03-12",
-      "endDate": "2023-12-20",
-      "summary": "Implementé el módulo de seguimiento para estudiantes en proceso de prácticas pre profesionales en el sistema PPP de la Universidad Peruana Unión",
+      "position": "Web Developer",
+      "startDate": "2018",
+      "endDate": "2019",
+      "summary": "I implemented the monitoring module for students in the process of pre-professional internships in the PPP system of the Universidad Peruana Unión",
       "highlights": [
-        "Preparar el análisis para el requerimiento seguimiento de prácticas, autoevaluación y fin de prácticas",
-        "Desarrollar el requerimiento seguimiento de practicantes",
-        "Desarrollar el requerimiento autoevaluación practicante",
-        "Desarrollar el requerimiento fin de practicas"
+        "Prepare the analysis of the module, follow-ups of students in the internship process",
+        "Develop the monitoring requirement for students in the internship process",
+        "Develop the monitoring requirement for students in internship exam",
+        "Develop the monitoring requirement for students in internship final"
       ]
     }
   ]
