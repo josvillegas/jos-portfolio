@@ -31,6 +31,6 @@ urlfigma: "https://www.figma.com/proto/Zi5exxrBYu27FfaqipCxJA/Clinica?page-id=1%
 urlpreview: "https://clinica-jos-dev.vercel.app/"
 action: "view project"
 pubDate: 2024-01-06
-tags: ["Medical -", " Hospital"]
+tags: ["Medical", "Hospital"]
 slug: healthclinic
 ---
