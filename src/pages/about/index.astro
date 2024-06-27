@@ -3,67 +3,123 @@ import MainLayout from "../../layout/MainLayout.astro";
 import SectionContainer from "../../components/SectionContainer.astro";
 ---
 
-<MainLayout title="Aboute me" description="I'm Jos Lee Villegas Pacheco">
+<MainLayout title="About me" description="I'm Jos Lee Villegas Pacheco">
   <SectionContainer>
-    <div class="mb-5">
-      <span
-        class="bg-green-400 py-1 px-4 rounded-xl text-green-800 border-2 border-green-800 font-bold text-sm md:text-base"
-        >Available to work</span
-      >
-    </div>
-    <h3 class="text-4xl font-bold text-gray-900 mt-5 mb-3">Who I am?</h3>
-    <section
-      class="flex flex-col-reverse items-center justify-center md:flex-row gap-x-20 gap-y-10"
-    >
-      <div class="space-y-6">
-        <p class="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat saepe
-          architecto minima aperiam consectetur, vitae distinctio aut qui earum
-          repellat, laborum eius ducimus, rem nostrum quaerat maxime.
-          Blanditiis, quis quod?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora esse
-          soluta ab nostrum odit eaque voluptates minima. Totam, nostrum. Iusto
-          doloribus assumenda architecto reiciendis deserunt fuga quasi aut eius
-          placeat.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          aliquid doloremque dolorum, ex tempora nesciunt iure, praesentium ea
-          facilis suscipit, asperiores repellendus fugit fugiat debitis amet
-          maxime exercitationem blanditiis. Earum?
-        </p>
+    <div class="px-0 sm:px-20">
+      <div class="mb-5">
+        <span
+          class="bg-green-400 py-1 px-4 rounded-xl text-green-900 border-2 border-green-800 font-bold text-sm"
+          >Available to work</span
+        >
       </div>
-      <img
-        class="rounded-full size-40 sm:size-52 mt-10 sm:mt-0"
-        src="perfilcv.webp"
-        alt="Imagen de Jos Villegas"
-        title="Imagen de Jos Villegas"
-      />
-    </section>
+      <h3 class="text-4xl font-bold text-gray-900 mt-5 mb-3">Who I am?</h3>
 
-    <h3 class="text-3xl font-bold text-gray-900 mt-8 mb-3">Skillset</h3>
-    <section
-      class="flex flex-col items-start gap-x-60 sm:flex-row sm:items-center"
-    >
-      <ul class="list-disc ml-8 space-y-2">
-        <li>UX Design</li>
-        <li>UI Design</li>
-      </ul>
-      <ul class="list-disc ml-8 space-y-2 sm:mt-0 mt-2">
-        <li>Wireframing</li>
-        <li>Design Systems</li>
-      </ul>
-    </section>
+      <section
+        class="flex flex-col-reverse items-center justify-center md:flex-row gap-x-20 gap-y-10 mt-10 mb-20"
+      >
+        <div class="space-y-4 text-sm">
+          <p class="text-xl font-semibold">
+            Soy Jos, diseñador UX UI y Web based in Peru
+          </p>
+          <p class="">
+            Since I was little I have been <strong class="text-amber-700"
+              >passionate</strong
+            > about the way in which web platforms or mobile applications without
+            the need for a user manual, the way in which one can interact with them
+            is simple and intuitive.
+          </p>
+          <p>
+            During my school and university years my grades were good but the
+            reason for them was that I thought about what would happen if the
+            jobs that I was given, no matter how responsible I was, had
+            something bad.
+          </p>
+          <p>
+            This led me to have to <strong class="text-amber-700"
+              >explore in depth possible errors</strong
+            > that arise when carrying out each activity, which helped me to <strong
+              class="text-amber-700">be detail-oriented</strong
+            > with the responsibilities I have.
+          </p>
+        </div>
+        <img
+          class="rounded-full size-40 sm:size-52 mt-10 sm:mt-0"
+          src="perfilcv.webp"
+          width="100%"
+          height="100%"
+          alt="Imagen de Jos Villegas"
+          title="Imagen de Jos Villegas"
+        />
+      </section>
 
-    <h3 class="text-3xl font-bold text-gray-900 mt-8 mb-3">Tools</h3>
-    <section class="flex items-start sm:items-center">
-      <ul class="list-disc ml-8 space-y-2">
-        <li>Figma</li>
-        <li>Miro</li>
-        <li>Adobe XD</li>
-      </ul>
-    </section>
+      <section
+        class="flex flex-col-reverse items-center justify-center md:flex-row gap-x-20 gap-y-10 mt-10 mb-20"
+      >
+        <img
+          class="rounded-full size-40 sm:size-52 mt-10 sm:mt-0"
+          src="perfilcv.webp"
+          alt="Imagen de Jos Villegas"
+          title="Imagen de Jos Villegas"
+        />
+        <div class="space-y-4 text-sm">
+          <p class="">
+            As a professional, I consider myself a <strong
+              class="text-amber-700">perfectionist</strong
+            >, which leads me to always <strong class="text-amber-700"
+              >try to verify the smallest detail</strong
+            > and explore other ways to get the job done.
+          </p>
+          <p>
+            All this leads me to my design approach being guided by <strong
+              class="text-amber-700"
+              >the artistic attitude, scientific method, creative disorder and
+              obsession with every smallest detail.</strong
+            >
+          </p>
+          <p>
+            When I'm not designing, I find myself exploring my creativity
+            through music playing the guitar, books that talk about psychology
+            or researching unknown things that catch my attention.
+          </p>
+          <div>
+            <a
+              download
+              class="inline-flex justify-center items-center rounded-lg bg-[#4e4e4e] p-2 text-white border border-white hover:bg-[#272727]"
+              href="CV_JosLeeVillegasPacheco.pdf"
+              title="Donwload CV Jos"
+              aria-label="Donwload CV Jos">Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <h3 class="text-3xl font-bold text-gray-900 mt-8 mb-3">Skillset</h3>
+      <section
+        class="flex flex-col items-start gap-x-60 sm:flex-row sm:items-center"
+      >
+        <ul class="list-disc ml-8 space-y-2">
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+        <ul class="list-disc ml-8 space-y-2 sm:mt-0 mt-2">
+          <li>Wireframing</li>
+          <li>Design Systems</li>
+        </ul>
+      </section>
+
+      <h3 class="text-3xl font-bold text-gray-900 mt-8 mb-3">Tools</h3>
+      <section
+        class="flex flex-col items-start gap-x-60 sm:flex-row sm:items-center"
+      >
+        <ul class="list-disc ml-8 space-y-2">
+          <li>Figma</li>
+          <li>Adobe XD</li>
+        </ul>
+        <ul class="list-disc ml-8 space-y-2 sm:mt-0 mt-2">
+          <li>Miro</li>
+          <li>HTML y CSS</li>
+        </ul>
+      </section>
+    </div>
   </SectionContainer>
 </MainLayout>
