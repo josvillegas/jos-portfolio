@@ -1,5 +1,5 @@
 ---
-import ProjectLayout from "../layout/ProjectLayout.astro";
+import MainLayout from "../layout/MainLayout.astro";
 import { getEntry } from "astro:content";
 
 const { slug } = Astro.params;
@@ -13,11 +13,9 @@ const entry = await getEntry("proyecto", slug);
 if (entry === undefined) {
   return Astro.redirect("/404");
 }
-
-const { Content } = await entry.render();
 ---
 
-<ProjectLayout>
+<MainLayout>
   <h3 class="text-black text-3xl text-center font-bold mb-5 mt-12">
     Process UX UI Design - {entry.data.title}
   </h3>
@@ -36,14 +34,14 @@ const { Content } = await entry.render();
   <!-- Competitive Analysis -->
   <div class="my-20 space-y-3">
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-      Competitive Analysis
+      Competitive Analysis or Necesidad
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.infanalisi}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imganalisis}
-      alt={`Preview image from ${entry.data.title}'s analysis`}
-      title={`Preview image from ${entry.data.title}'s analysis`}
+      alt={`Preview image from ${entry.data.title}'s analysis or neceisdad`}
+      title={`Preview image from ${entry.data.title}'s analysis or neceisdad`}
     />
   </div>
   <!-- Interviews 
@@ -51,7 +49,7 @@ const { Content } = await entry.render();
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Interviews</h5>
     <p class="max-w-3xl m-auto">{entry.data.infinterview}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imginterview}
       alt={`Preview image from ${entry.data.title}'s interview`}
       title={`Preview image from ${entry.data.title}'s interview`}
@@ -62,7 +60,7 @@ const { Content } = await entry.render();
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Site Map</h5>
     <p class="max-w-3xl m-auto">{entry.data.infsm}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imgsm}
       alt={`Preview image from ${entry.data.title}'s site map`}
       title={`Preview image from ${entry.data.title}'s site map`}
@@ -73,7 +71,7 @@ const { Content } = await entry.render();
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">User Flow</h5>
     <p class="max-w-3xl m-auto">{entry.data.infuf}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imguf}
       alt={`Preview image from ${entry.data.title}'s user flow`}
       title={`Preview image from ${entry.data.title}'s user flow`}
@@ -86,7 +84,7 @@ const { Content } = await entry.render();
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.inflwireframe}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imglwireframe}
       alt={`Preview image from ${entry.data.title}'s Lo-Fi Wireframe`}
       title={`Preview image from ${entry.data.title}'s Lo-Fi Wireframe`}
@@ -99,14 +97,14 @@ const { Content } = await entry.render();
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.infmwireframe}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imgmwireframe}
       alt={`Preview image from ${entry.data.title}'s Me-Fi Wireframe`}
       title={`Preview image from ${entry.data.title}'s Me-Fi Wireframe`}
     />
   </div>
   <h3 class="text-3xl text-center text-black underline font-black">
-    Diseno UI
+    UI Design
   </h3>
   <!-- Typography and Colors -->
   <div class="my-20 space-y-4">
@@ -115,7 +113,7 @@ const { Content } = await entry.render();
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.inftc}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imgtc}
       alt={`Preview image from ${entry.data.title}'s Typography and Colors`}
       title={`Preview image from ${entry.data.title}'s Typography and Colors`}
@@ -126,7 +124,7 @@ const { Content } = await entry.render();
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">System Grid</h5>
     <p class="max-w-3xl m-auto">{entry.data.infgrid}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imggrid}
       alt={`Preview image from ${entry.data.title}'s System Grid`}
       title={`Preview image from ${entry.data.title}'s System Grid`}
@@ -137,7 +135,7 @@ const { Content } = await entry.render();
     <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Some Icons</h5>
     <p class="max-w-3xl m-auto">{entry.data.inficons}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imgicons}
       alt={`Preview image from ${entry.data.title}'s Icons`}
       title={`Preview image from ${entry.data.title}'s Icons`}
@@ -150,7 +148,7 @@ const { Content } = await entry.render();
     </h5>
     <p class="max-w-3xl m-auto">{entry.data.infcomponent}</p>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imgcomponent}
       alt={`Preview image from ${entry.data.title}'s Components`}
       title={`Preview image from ${entry.data.title}'s Components`}
@@ -173,6 +171,7 @@ const { Content } = await entry.render();
                 href={entry.data.urlpreview}
                 target="_blank"
                 title="Visitar Proyecto"
+                rel="noreferrer noopener"
               >
                 here
               </a>
@@ -190,6 +189,7 @@ const { Content } = await entry.render();
                 href={entry.data.urlfigma}
                 target="_blank"
                 title="Visitar Figma del proyecto"
+                rel="noreferrer noopener"
               >
                 here
               </a>
@@ -199,10 +199,10 @@ const { Content } = await entry.render();
       }
     </div>
     <img
-      class="w-10/12 m-auto p-2"
+      class="w-11/12 m-auto p-2 md:w-7/12"
       src={entry.data.imgprocess}
       alt={`Preview image from ${entry.data.title}'s Hi-Fi Wireframe`}
       title={`Preview image from ${entry.data.title}'s Hi-Fi Wireframe`}
     />
   </div>
-</ProjectLayout>
+</MainLayout>
