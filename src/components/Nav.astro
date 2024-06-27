@@ -2,17 +2,17 @@
 const navItems = [
   {
     title: "Work",
-    label: "work",
+    label: "Redirigir a  work",
     url: "/",
   },
   {
     title: "Experience",
-    label: "experience",
+    label: "Redirigir a experience",
     url: "experiencia",
   },
   {
     title: "About",
-    label: "about",
+    label: "Redirigir a about",
     url: "about",
   },
 ];
@@ -29,6 +29,8 @@ const navItems = [
             class="relative block px-2 py-2 transition hover:text-yellow-400"
             aria-label={link.label}
             href={link.url}
+            rel="noreferrer noopener"
+            title={link.label}
           >
             {link.title}
           </a>
