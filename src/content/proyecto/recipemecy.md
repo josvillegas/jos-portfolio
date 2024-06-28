@@ -25,10 +25,10 @@ inficons: "In relation to the icons, only three were used since most of the desi
 imgicons: "../images/MecyIcons.webp"
 infcomponent: "Thanks to the medium fidelity wireframes, it was possible to find sections where certain points were repetitive and had states, therefore components were created that will help the design be faster and its future development more feasible."
 imgcomponent: "../images/MecyComponent.webp"
-infprocess: "Una vez organizado y combinado componentes, colores, tipografía, imágenes, etc, se pudo realizar el diseño final de cada pantalla"
+infprocess: "Once organized and combined components, colors, typography, images, etc., the final design of each screen could be made."
 imgprocess: "../images/MecyPrototype.webp"
-urlfigma: "https://www.figma.com/proto/Zi5exxrBYu27FfaqipCxJA/Clinica?page-id=1%3A4&node-id=1-33&viewport=254%2C371%2C0.04&t=pS8eLRgSJmtJx1lO-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A33"
-urlpreview: ""
+urlfigma: ""
+urlpreview: "https://github.com/josvillegas/app-recipe-mecy"
 action: "view project"
 pubDate: 2024-01-06
 tags: ["Recipes", "Family"]

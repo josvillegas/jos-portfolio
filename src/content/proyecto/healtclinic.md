@@ -13,7 +13,7 @@ infsm: "With the previous research, the site map was created, the most relevant 
 imgsm: "../images/CSm.webp"
 infuf: "Continuing with the architecture of the website, the flow of tasks that users would have to perform was developed. These steps identify and consider how each task is connected to each other to facilitate navigation within the platform."
 imguf: "../images/CUf.webp"
-inflwireframe: ""
+inflwireframe: "With what has been researched, we move on to the design of the first sketches and verify that the required flows and navigation within the website are being met."
 imglwireframe: "../images/CLWireframe.webp"
 infmwireframe: "After defining the user flows and how the main navigation was carried out, we began with the design of the first medium fidelity wireframes to have a better vision of how the idea of ​​views was being thought out:"
 imgmwireframe: "../images/CMWireframe.webp"
