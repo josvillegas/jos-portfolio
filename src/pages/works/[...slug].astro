@@ -42,7 +42,7 @@ if (entry === undefined) {
         <p class="max-w-3xl m-auto pb-6">{entry.data.infanalisi}</p>
 
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imganalisis}
           alt={`Preview image from ${entry.data.title}'s analysis or neceisdad`}
           title={`Preview image from ${entry.data.title}'s analysis or neceisdad`}
@@ -53,7 +53,7 @@ if (entry === undefined) {
         <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Interviews</h5>
         <p class="max-w-3xl m-auto">{entry.data.infinterview}</p>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imginterview}
           alt={`Preview image from ${entry.data.title}'s interview`}
           title={`Preview image from ${entry.data.title}'s interview`}
@@ -64,7 +64,7 @@ if (entry === undefined) {
         <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Site Map</h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infsm}</p>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imgsm}
           alt={`Preview image from ${entry.data.title}'s site map`}
           title={`Preview image from ${entry.data.title}'s site map`}
@@ -75,7 +75,7 @@ if (entry === undefined) {
         <h5 class="text-black text-xl max-w-3xl m-auto font-bold">User Flow</h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infuf}</p>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imguf}
           alt={`Preview image from ${entry.data.title}'s user flow`}
           title={`Preview image from ${entry.data.title}'s user flow`}
@@ -88,7 +88,7 @@ if (entry === undefined) {
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.inflwireframe}</p>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imglwireframe}
           alt={`Preview image from ${entry.data.title}'s Lo-Fi Wireframe`}
           title={`Preview image from ${entry.data.title}'s Lo-Fi Wireframe`}
@@ -101,7 +101,7 @@ if (entry === undefined) {
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infmwireframe}</p>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imgmwireframe}
           alt={`Preview image from ${entry.data.title}'s Me-Fi Wireframe`}
           title={`Preview image from ${entry.data.title}'s Me-Fi Wireframe`}
@@ -117,7 +117,7 @@ if (entry === undefined) {
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.inftc}</p>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imgtc}
           alt={`Preview image from ${entry.data.title}'s Typography and Colors`}
           title={`Preview image from ${entry.data.title}'s Typography and Colors`}
@@ -130,7 +130,7 @@ if (entry === undefined) {
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infgrid}</p>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imggrid}
           alt={`Preview image from ${entry.data.title}'s System Grid`}
           title={`Preview image from ${entry.data.title}'s System Grid`}
@@ -143,7 +143,7 @@ if (entry === undefined) {
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.inficons}</p>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imgicons}
           alt={`Preview image from ${entry.data.title}'s Icons`}
           title={`Preview image from ${entry.data.title}'s Icons`}
@@ -156,7 +156,7 @@ if (entry === undefined) {
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infcomponent}</p>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imgcomponent}
           alt={`Preview image from ${entry.data.title}'s Components`}
           title={`Preview image from ${entry.data.title}'s Components`}
@@ -170,28 +170,10 @@ if (entry === undefined) {
         <p class="max-w-3xl m-auto pb-6">{entry.data.infprocess}</p>
         <div class="max-w-3xl m-auto space-y-1">
           {
-            entry.data.urlpreview && (
-              <>
-                <p>
-                  To see the website click
-                  <a
-                    class="font-black"
-                    href={entry.data.urlpreview}
-                    target="_blank"
-                    title="Visitar Proyecto"
-                    rel="noreferrer noopener"
-                  >
-                    here
-                  </a>
-                </p>
-              </>
-            )
-          }
-          {
             entry.data.urlfigma && (
               <>
                 <p>
-                  To see the complete prototype click
+                  to see the design in figma click
                   <a
                     class="font-black"
                     href={entry.data.urlfigma}
@@ -199,7 +181,25 @@ if (entry === undefined) {
                     title="Visitar Figma del proyecto"
                     rel="noreferrer noopener"
                   >
-                    here
+                    prototype
+                  </a>
+                </p>
+              </>
+            )
+          }
+          {
+            entry.data.urlpreview && (
+              <>
+                <p>
+                  To see more details click
+                  <a
+                    class="font-black"
+                    href={entry.data.urlpreview}
+                    target="_blank"
+                    title="Visitar Repositorio o Sitio Web"
+                    rel="noreferrer noopener"
+                  >
+                    repository or preview
                   </a>
                 </p>
               </>
@@ -207,7 +207,7 @@ if (entry === undefined) {
           }
         </div>
         <img
-          class="w-11/12 m-auto p-2 md:w-7/12"
+          class="w-11/12 m-auto p-2 md:w-9/12"
           src={entry.data.imgprocess}
           alt={`Preview image from ${entry.data.title}'s Hi-Fi Wireframe`}
           title={`Preview image from ${entry.data.title}'s Hi-Fi Wireframe`}
