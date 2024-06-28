@@ -5,10 +5,30 @@ import { ViewTransitions } from "astro:transitions";
 
 <head>
   <meta charset="utf-8" />
+  <title>{title}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
-  <title>{title}</title>
   <meta name="description" content={description} />
   <ViewTransitions />
+  <!--
+  <link rel="preload" href={"../../../images/PGrandIASD.webp"} as="image" />
+  -->
+
+  <meta
+    property="og:description"
+    content="UI and Web designer with more than two years of experience in the field through teaching workshops to high school students and creating personal projects for both web and mobile devices."
+  />
+  <meta property="og:url" content="https://josvillegas-portfolio.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfolio Jos Villegas " />
+  <!-- 
+  <meta
+    property="og:image"
+    content={new URL(
+      "https://raw.githubusercontent.com/josvillegas/jos-portfolio/main/public/images/PGrandIASD.webp",
+      Astro.url
+    )}
+  />
+  -->
 </head>

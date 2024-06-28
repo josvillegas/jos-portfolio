@@ -15,29 +15,28 @@ const otherProjects: CollectionEntry<"proyecto">[] = allProjects.slice(1);
   <SectionContainer>
     <div class="px-0 sm:px-20">
       <section class="flex py-8 px-10 mb-10">
-        <div class="flex flex-col gap-y-3">
-          <h1 class="text-5xl font-bold text-gray-950">
-            Hi there, I'm Jos Lee
-          </h1>
+        <div class="flex flex-col gap-y-6">
+          <h1 class="text-5xl font-bold text-gray-950">Hey, I'm Jos Lee</h1>
           <p class="text-base max-w-xl">
-            UI and Web Designer with more than two years of experience in the
-            field through teaching workshops to high school students and
-            creating personal projects for both web and mobile devices.
+            <strong class="text-amber-700">UI and Web designer</strong> with more
+            than two years of experience in the field through teaching workshops
+            to high school students and creating personal projects for both web and
+            mobile devices.
           </p>
 
           <div class="mt-3">
             <a
               class="bg-[#4e4e4e] text-white py-2 px-4 rounded-lg font-bold hover:bg-[#272727]"
-              href="about"
+              href="/about"
               rel="noreferrer noopener">Learn more</a
             >
           </div>
         </div>
       </section>
       <span
-        class="flex items-center text-3xl px-2 font-black text-gray-950 mb-12 gap-x-3"
+        class="flex items-center text-3xl px-2 font-black text-gray-950 mb-8 gap-x-3"
       >
-        <Projects class="size-6" /> Recent Projects
+        <Projects class="size-6" /> Recent Works
       </span>
       {
         otherProjects.slice(0, HOMEPAGE_PROJECT_LIMIT).map((proyecto) => (
