@@ -27,7 +27,7 @@ infcomponent: "Thanks to the medium fidelity wireframes, it was possible to find
 imgcomponent: "../images/SportComponent.webp"
 infprocess: "With all the resources mentioned, we moved on to the high fidelity design stage in which the best vision of the proposed idea was defined."
 imgprocess: "../images/SportPrototype.webp"
-urlfigma: "https://www.figma.com/proto/Ce35RwdA5R0r9LWeFHNGhY/Deportes_UPeU?page-id=1%3A10&node-id=49-2001&viewport=894%2C700%2C0.24&t=coOgQ1CjBR269pHc-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=106%3A2410"
+urlfigma: "https://www.figma.com/proto/Ce35RwdA5R0r9LWeFHNGhY/Deportes_UPeU?page-id=1%3A10&node-id=106-2410&viewport=458%2C666%2C0.13&t=XVdmKzc57nFyFX2Y-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=106%3A2410&show-proto-sidebar=1"
 urlpreview: "https://github.com/josvillegas/app-sport-upeu"
 action: "view project"
 pubDate: 2024-01-06

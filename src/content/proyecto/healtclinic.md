@@ -27,7 +27,7 @@ infcomponent: "Thanks to the medium fidelity wireframes, it was possible to find
 imgcomponent: "../images/CComponent.webp"
 infprocess: "Once components, colors, typography, images, etc. were organized and combined, the final design of each page and section of the website could be made."
 imgprocess: "../images/CPrototype.webp"
-urlfigma: "https://www.figma.com/proto/Zi5exxrBYu27FfaqipCxJA/Clinica?page-id=1%3A4&node-id=1-33&viewport=254%2C371%2C0.04&t=pS8eLRgSJmtJx1lO-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A33"
+urlfigma: "https://www.figma.com/proto/Zi5exxrBYu27FfaqipCxJA/Clinica?page-id=1%3A4&node-id=1-33&viewport=299%2C477%2C0.02&t=R4j4Nfh34YDmaouh-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A33&show-proto-sidebar=1"
 urlpreview: "https://clinica-jos-dev.vercel.app/"
 action: "view project"
 pubDate: 2024-01-06

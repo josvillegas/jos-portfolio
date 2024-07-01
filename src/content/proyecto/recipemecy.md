@@ -27,7 +27,7 @@ infcomponent: "Thanks to the medium fidelity wireframes, it was possible to find
 imgcomponent: "../images/MecyComponent.webp"
 infprocess: "Once organized and combined components, colors, typography, images, etc., the final design of each screen could be made."
 imgprocess: "../images/MecyPrototype.webp"
-urlfigma: "https://www.figma.com/proto/vUAYzuLocZXa2B1mPvkowC/Recetas_Mom?page-id=2%3A4&node-id=47-613&viewport=-937%2C-1482%2C0.61&t=XdILQSJGYw4UVOXI-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=47%3A573"
+urlfigma: "https://www.figma.com/proto/vUAYzuLocZXa2B1mPvkowC/Recetas_Mom?page-id=2%3A4&node-id=47-573&viewport=268%2C-7%2C0.12&t=DrMdOScWSbsWlUqC-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=47%3A573&show-proto-sidebar=1"
 urlpreview: "https://github.com/josvillegas/app-recipe-mecy"
 action: "view project"
 pubDate: 2024-01-06
