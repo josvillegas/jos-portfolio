@@ -27,7 +27,7 @@ infcomponent: "Thanks to the medium fidelity wireframes, it was possible to find
 imgcomponent: "../images/GrandComponent.webp"
 infprocess: "Once organized and combined components, colors, typography, images, etc., the final design of each screen could be made."
 imgprocess: "../images/GrandPrototype.webp"
-urlfigma: ""
+urlfigma: "https://www.figma.com/proto/KvJddCFcbwO9MuGQWp7ouV/IASD_Major?page-id=2%3A3&node-id=2-42&viewport=394%2C220%2C0.32&t=0u8Xp3EvSC0er251-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A7"
 urlpreview: "https://github.com/josvillegas/app-iasd-grand"
 action: "view project"
 pubDate: 2020-09-06
