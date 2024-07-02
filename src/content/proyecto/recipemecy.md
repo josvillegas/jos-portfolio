@@ -29,7 +29,7 @@ infprocess: "Once organized and combined components, colors, typography, images,
 imgprocess: "../images/MecyPrototype.webp"
 urlfigma: "https://www.figma.com/proto/vUAYzuLocZXa2B1mPvkowC/Recetas_Mom?page-id=2%3A4&node-id=47-573&viewport=268%2C-7%2C0.12&t=DrMdOScWSbsWlUqC-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=47%3A573&show-proto-sidebar=1"
 urlpreview: "https://github.com/josvillegas/app-recipe-mecy"
-action: "view project"
+action: "true"
 pubDate: 2024-01-06
 tags: ["Recipes", "Family"]
 slug: recipemecy

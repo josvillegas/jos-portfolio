@@ -29,7 +29,7 @@ infprocess: "Once components, colors, typography, images, etc. were organized an
 imgprocess: "../images/CPrototype.webp"
 urlfigma: "https://www.figma.com/proto/Zi5exxrBYu27FfaqipCxJA/Clinica?page-id=1%3A4&node-id=1-33&viewport=299%2C477%2C0.02&t=R4j4Nfh34YDmaouh-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A33&show-proto-sidebar=1"
 urlpreview: "https://clinica-jos-dev.vercel.app/"
-action: "view project"
+action: "true"
 pubDate: 2024-01-06
 tags: ["Medical", "Hospital"]
 slug: healthclinic

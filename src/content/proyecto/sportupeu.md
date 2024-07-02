@@ -29,7 +29,7 @@ infprocess: "With all the resources mentioned, we moved on to the high fidelity 
 imgprocess: "../images/SportPrototype.webp"
 urlfigma: "https://www.figma.com/proto/Ce35RwdA5R0r9LWeFHNGhY/Deportes_UPeU?page-id=1%3A10&node-id=106-2410&viewport=458%2C666%2C0.13&t=XVdmKzc57nFyFX2Y-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=106%3A2410&show-proto-sidebar=1"
 urlpreview: "https://github.com/josvillegas/app-sport-upeu"
-action: "view project"
+action: "true"
 pubDate: 2024-01-06
 tags: ["University", "Sports"]
 slug: sportupeu

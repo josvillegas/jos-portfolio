@@ -29,7 +29,7 @@ infprocess: "Once organized and combined components, colors, typography, images,
 imgprocess: "../images/GrandPrototype.webp"
 urlfigma: "https://www.figma.com/proto/KvJddCFcbwO9MuGQWp7ouV/IASD_Major?page-id=2%3A3&node-id=2-7&viewport=313%2C576%2C0.06&t=3ri3pqmZEcyO9InT-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A7&show-proto-sidebar=1"
 urlpreview: "https://github.com/josvillegas/app-iasd-grand"
-action: "view project"
+action: "true"
 pubDate: 2020-09-06
 tags: ["IASD", "Family"]
 slug: grandiasd
