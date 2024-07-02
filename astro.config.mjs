@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [tailwind()],
   output: "server",
   devToolbar: {
-    enabled: false
+    enabled: false,
   },
-  adapter: vercel()
+  adapter: vercel(),
 });

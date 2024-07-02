@@ -36,7 +36,7 @@ const otherProjects: CollectionEntry<"proyecto">[] = allProjects.slice(1);
       <span
         class="flex items-center text-3xl px-2 font-black text-gray-950 mb-8 gap-x-3"
       >
-        <Projects class="size-6" /> Recent Works
+        <Projects class="size-6" /> Recent Projects
       </span>
       {
         otherProjects.slice(0, HOMEPAGE_PROJECT_LIMIT).map((proyecto) => (
@@ -63,7 +63,7 @@ const otherProjects: CollectionEntry<"proyecto">[] = allProjects.slice(1);
             </div>
             <a
               class="w-11/12 rounded-xl hover:scale-105 transition duration-500 md:w-6/12"
-              href={"/works/" + proyecto.slug}
+              href={"/projects/" + proyecto.slug}
               rel="noreferrer noopener"
             >
               <img
