@@ -20,14 +20,14 @@ if (entry === undefined) {
   <SectionContainer>
     <section class="px-0 sm:px-20">
       <h3 class="text-black text-3xl text-center font-bold mb-5 mt-12">
-        Proceso de Disenio UX UI - {entry.data.title}
+        Process UX UI Design - {entry.data.title}
       </h3>
       <p class="text-center mt-8 mb-6 font-semibold text-xl">
         {entry.data.subtitle}
       </p>
       <img
         class="mx-auto w-10/12 mb-12 md:w-6/12"
-        src={entry.data.imgpreview}
+        src={`../${entry.data.imgpreview}`}
         alt={`Preview image from ${entry.data.title}`}
         title={`Preview image from ${entry.data.title}`}
       />
@@ -37,7 +37,7 @@ if (entry === undefined) {
       <!-- Competitive Analysis -->
       <div class="my-20 space-y-3">
         <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-          Analisis o problematica
+          Analysis por Problem
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infanalisi}</p>
 
@@ -61,9 +61,7 @@ if (entry === undefined) {
       </div> -->
       <!-- Site Map-->
       <div class="my-20 space-y-4">
-        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-          Mapa de sitio
-        </h5>
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Site Map</h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infsm}</p>
         <img
           class="w-11/12 m-auto p-2 md:w-9/12"
@@ -74,9 +72,7 @@ if (entry === undefined) {
       </div>
       <!-- User Flow -->
       <div class="my-20 space-y-4">
-        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-          Flujo de Usuarios
-        </h5>
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">User Flow</h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infuf}</p>
         <img
           class="w-11/12 m-auto p-2 md:w-9/12"
@@ -88,7 +84,7 @@ if (entry === undefined) {
       <!-- Low Fidelity Wireframe -->
       <div class="my-20 space-y-4">
         <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-          Wireframe de baja fidelidad
+          Lo-Fi Wireframe
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.inflwireframe}</p>
         <img
@@ -101,7 +97,7 @@ if (entry === undefined) {
       <!-- Mi-Fi Wireframe -->
       <div class="my-20 space-y-4">
         <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-          Wireframe de mediana fidelidad
+          Me-Fi Wireframe
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infmwireframe}</p>
         <img
@@ -112,12 +108,12 @@ if (entry === undefined) {
         />
       </div>
       <h3 class="text-3xl text-center text-black underline font-black">
-        Sistema de Disenio
+        Design System
       </h3>
       <!-- Typography and Colors -->
       <div class="my-20 space-y-4">
         <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-          Tipografia y colores
+          Typography and Colors
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.inftc}</p>
         <img
@@ -130,7 +126,7 @@ if (entry === undefined) {
       <!-- System Grid -->
       <div class="my-20 space-y-4">
         <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-          Sistema de grilla
+          System Grid
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infgrid}</p>
         <img
@@ -142,7 +138,7 @@ if (entry === undefined) {
       </div>
       <!-- Icons -->
       <div class="my-20 space-y-4">
-        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Iconos</h5>
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Icons</h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.inficons}</p>
         <img
           class="w-11/12 m-auto p-2 md:w-9/12"
@@ -154,7 +150,7 @@ if (entry === undefined) {
       <!-- Components -->
       <div class="my-20 space-y-4">
         <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-          Componentes
+          Components
         </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infcomponent}</p>
         <img
@@ -166,9 +162,7 @@ if (entry === undefined) {
       </div>
       <!-- High Fidelity Prototype -->
       <div class="my-20 space-y-4">
-        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
-          Prototipo de alta fidelidad
-        </h5>
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Prototype</h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infprocess}</p>
         <div class="max-w-3xl m-auto space-y-1">
           {
