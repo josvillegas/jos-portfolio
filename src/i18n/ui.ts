@@ -19,3 +19,18 @@ export const ui = {
     "nav.about": "About me",
   },
 } as const;
+
+export const foot = {
+  es: {
+    des: "Diseñado",
+    and: "y",
+    dev: "desarrollado",
+    by: "por",
+  },
+  en: {
+    des: "Designed",
+    and: "and",
+    dev: "developed",
+    by: "by",
+  },
+};
