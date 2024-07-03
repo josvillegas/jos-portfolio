@@ -14,7 +14,7 @@ export const ui = {
   },
   en: {
     "nav.home": "Home",
-    "nav.projects": "Project",
+    "nav.projects": "Projects",
     "nav.experiencia": "Experience",
     "nav.about": "About me",
   },
