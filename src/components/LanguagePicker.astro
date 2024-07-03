@@ -1,0 +1,15 @@
+---
+import { languages } from "../i18n/ui";
+import { getLangFromUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url)
+---
+
+<>
+  {
+    Object.entries(languages).map(([langPrefix]) => {
+        if(langPrefix == lang) return <></>
+        return (<a href={`/${langPrefix}/`}>{langPrefix}</a>)
+    })
+  }
+</ul>

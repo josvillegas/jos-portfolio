@@ -1,26 +1,12 @@
 ---
-const navItems = [
-  {
-    title: "Inicio",
-    label: "Redirigir a Inicio",
-    url: "/",
-  },
-  {
-    title: "Proyectos",
-    label: "Redirigir a  proyectos",
-    url: "/projects",
-  },
-  {
-    title: "Experiencia",
-    label: "Redirigir a experiencia",
-    url: "/experiencia",
-  },
-  {
-    title: "Sobre mi",
-    label: "Redirigir a sobre mi",
-    url: "/about",
-  },
-];
+import { getLangFromUrl, getTranslations } from "../i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import LanguagePicker from "./LanguagePicker.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslations(lang);
+
+const { currentLocale } = Astro;
 ---
 
 <div class="flex items-center justify-center mt-12 bg-transparent">
@@ -28,19 +14,43 @@ const navItems = [
     <nav
       class="flex px-3 text-sm font-medium rounded-full text-black justify-center items-center"
     >
-      {
-        navItems.map((link) => (
-          <a
-            class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
-            aria-label={link.label}
-            href={link.url}
-            rel="noreferrer noopener"
-            title={link.label}
-          >
-            {link.title}
-          </a>
-        ))
-      }
+      <a
+        class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
+        aria-label="hola"
+        href={getRelativeLocaleUrl(currentLocale ?? "", "/")}
+        rel="noreferrer noopener"
+        title="hola"
+      >
+        {t("nav.home")}
+      </a>
+      <a
+        class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
+        aria-label="hola"
+        href={getRelativeLocaleUrl(currentLocale ?? "", "projects")}
+        rel="noreferrer noopener"
+        title="hola"
+      >
+        {t("nav.projects")}
+      </a>
+      <a
+        class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
+        aria-label="hola"
+        href={getRelativeLocaleUrl(currentLocale ?? "", "experiencia")}
+        rel="noreferrer noopener"
+        title="hola"
+      >
+        {t("nav.experiencia")}
+      </a>
+      <a
+        class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
+        aria-label="hola"
+        href={getRelativeLocaleUrl(currentLocale ?? "", "about")}
+        rel="noreferrer noopener"
+        title="hola"
+      >
+        {t("nav.about")}
+      </a>
+      <LanguagePicker />
     </nav>
   </header>
 </div>

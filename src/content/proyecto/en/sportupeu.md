@@ -32,5 +32,6 @@ urlpreview: "https://github.com/josvillegas/app-sport-upeu"
 action: "true"
 pubDate: 2024-01-06
 tags: ["University", "Sports"]
-slug: sportupeu
+languages: "es"
+slug: deporteupeu
 ---

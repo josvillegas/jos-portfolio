@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { languages } from "../i18n/ui";
 const proyectoCollection = defineCollection({
   type: "content",
   schema: z.object({
@@ -34,8 +35,11 @@ const proyectoCollection = defineCollection({
     urlpreview: z.string(),
     action: z.string(),
     pubDate: z.date(),
+    languages: z.enum(["es", "es"]),
     tags: z.array(z.string()),
   }),
 });
 
-export const collections = { proyecto: proyectoCollection };
+export const collections = {
+  proyecto: proyectoCollection,
+};

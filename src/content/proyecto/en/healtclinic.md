@@ -32,5 +32,6 @@ urlpreview: "https://clinica-jos-dev.vercel.app/"
 action: "true"
 pubDate: 2024-01-06
 tags: ["Medical", "Hospital"]
-slug: healthclinic
+languages: "es"
+slug: healthclinica
 ---

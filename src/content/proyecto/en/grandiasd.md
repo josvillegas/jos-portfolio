@@ -32,5 +32,6 @@ urlpreview: "https://github.com/josvillegas/app-iasd-grand"
 action: "true"
 pubDate: 2020-09-06
 tags: ["IASD", "Family"]
-slug: grandiasd
+languages: "es"
+slug: adultiasd
 ---

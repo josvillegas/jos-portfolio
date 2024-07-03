@@ -1,0 +1,220 @@
+---
+import SectionContainer from "../../../components/SectionContainer.astro";
+import MainLayout from "../../../layout/MainLayout.astro";
+import { getEntry } from "astro:content";
+
+const { slug } = Astro.params;
+
+if (slug === undefined) {
+  throw new Error("Slug is requerid");
+}
+
+const entry = await getEntry("proyecto", slug);
+
+if (entry === undefined) {
+  return Astro.redirect("/404");
+}
+---
+
+<MainLayout title={entry.data.title} description={entry.data.subtitle}>
+  <SectionContainer>
+    <section class="px-0 sm:px-20">
+      <h3 class="text-black text-3xl text-center font-bold mb-5 mt-12">
+        Proceso de Disenio UX UI - {entry.data.title}
+      </h3>
+      <p class="text-center mt-8 mb-6 font-semibold text-xl">
+        {entry.data.subtitle}
+      </p>
+      <img
+        class="mx-auto w-10/12 mb-12 md:w-6/12"
+        src={entry.data.imgpreview}
+        alt={`Preview image from ${entry.data.title}`}
+        title={`Preview image from ${entry.data.title}`}
+      />
+      <p class="max-w-xl mx-auto mt-6 italic text-xl font-semibold">
+        {`"${entry.data.description}..."`}
+      </p>
+      <!-- Competitive Analysis -->
+      <div class="my-20 space-y-3">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Analisis o problematica
+        </h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.infanalisi}</p>
+
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imganalisis}`}
+          alt={`Preview image from ${entry.data.title}'s analysis or neceisdad`}
+          title={`Preview image from ${entry.data.title}'s analysis or neceisdad`}
+        />
+      </div>
+      <!-- Interviews 
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Interviews</h5>
+        <p class="max-w-3xl m-auto">{entry.data.infinterview}</p>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imginterview}`}
+          alt={`Preview image from ${entry.data.title}'s interview`}
+          title={`Preview image from ${entry.data.title}'s interview`}
+        />
+      </div> -->
+      <!-- Site Map-->
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Mapa de sitio
+        </h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.infsm}</p>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imgsm}`}
+          alt={`Preview image from ${entry.data.title}'s site map`}
+          title={`Preview image from ${entry.data.title}'s site map`}
+        />
+      </div>
+      <!-- User Flow -->
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Flujo de Usuarios
+        </h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.infuf}</p>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imguf}`}
+          alt={`Preview image from ${entry.data.title}'s user flow`}
+          title={`Preview image from ${entry.data.title}'s user flow`}
+        />
+      </div>
+      <!-- Low Fidelity Wireframe -->
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Wireframe de baja fidelidad
+        </h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.inflwireframe}</p>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imglwireframe}`}
+          alt={`Preview image from ${entry.data.title}'s Lo-Fi Wireframe`}
+          title={`Preview image from ${entry.data.title}'s Lo-Fi Wireframe`}
+        />
+      </div>
+      <!-- Mi-Fi Wireframe -->
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Wireframe de mediana fidelidad
+        </h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.infmwireframe}</p>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imgmwireframe}`}
+          alt={`Preview image from ${entry.data.title}'s Me-Fi Wireframe`}
+          title={`Preview image from ${entry.data.title}'s Me-Fi Wireframe`}
+        />
+      </div>
+      <h3 class="text-3xl text-center text-black underline font-black">
+        Sistema de Disenio
+      </h3>
+      <!-- Typography and Colors -->
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Tipografia y colores
+        </h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.inftc}</p>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imgtc}`}
+          alt={`Preview image from ${entry.data.title}'s Typography and Colors`}
+          title={`Preview image from ${entry.data.title}'s Typography and Colors`}
+        />
+      </div>
+      <!-- System Grid -->
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Sistema de grilla
+        </h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.infgrid}</p>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imggrid}`}
+          alt={`Preview image from ${entry.data.title}'s System Grid`}
+          title={`Preview image from ${entry.data.title}'s System Grid`}
+        />
+      </div>
+      <!-- Icons -->
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Iconos</h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.inficons}</p>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imgicons}`}
+          alt={`Preview image from ${entry.data.title}'s Icons`}
+          title={`Preview image from ${entry.data.title}'s Icons`}
+        />
+      </div>
+      <!-- Components -->
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Componentes
+        </h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.infcomponent}</p>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imgcomponent}`}
+          alt={`Preview image from ${entry.data.title}'s Components`}
+          title={`Preview image from ${entry.data.title}'s Components`}
+        />
+      </div>
+      <!-- High Fidelity Prototype -->
+      <div class="my-20 space-y-4">
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Prototipo de alta fidelidad
+        </h5>
+        <p class="max-w-3xl m-auto pb-6">{entry.data.infprocess}</p>
+        <div class="max-w-3xl m-auto space-y-1">
+          {
+            entry.data.urlfigma && (
+              <>
+                <p>
+                  Para ver el disenio en figma clic en
+                  <a
+                    class="font-black"
+                    href={entry.data.urlfigma}
+                    target="_blank"
+                    title="Visitar Figma del proyecto"
+                    rel="noreferrer noopener"
+                  >
+                    prototipo
+                  </a>
+                </p>
+              </>
+            )
+          }
+          {
+            entry.data.urlpreview && (
+              <>
+                <p>
+                  Para ver otros detalles clic en
+                  <a
+                    class="font-black"
+                    href={entry.data.urlpreview}
+                    target="_blank"
+                    title="Visitar Repositorio o Sitio Web"
+                    rel="noreferrer noopener"
+                  >
+                    repositorio o vista previa
+                  </a>
+                </p>
+              </>
+            )
+          }
+        </div>
+        <img
+          class="w-11/12 m-auto p-2 md:w-9/12"
+          src={`../${entry.data.imgprocess}`}
+          alt={`Preview image from ${entry.data.title}'s Hi-Fi Wireframe`}
+          title={`Preview image from ${entry.data.title}'s Hi-Fi Wireframe`}
+        />
+      </div>
+    </section>
+  </SectionContainer>
+</MainLayout>

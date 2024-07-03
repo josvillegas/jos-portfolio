@@ -32,5 +32,6 @@ urlpreview: "https://github.com/josvillegas/app-recipe-mecy"
 action: "true"
 pubDate: 2024-01-06
 tags: ["Recipes", "Family"]
-slug: recipemecy
+languages: "es"
+slug: recetasmecy
 ---
