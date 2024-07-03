@@ -9,7 +9,7 @@ const lang = getLangFromUrl(Astro.url)
   {
     Object.entries(languages).map(([langPrefix]) => {
         if(langPrefix == lang) return <></>
-        return (<a href={`/${langPrefix}/`}>{langPrefix}</a>)
+        return (<a class="font-bold text-base ml-10" href={`/${langPrefix}/`}>{langPrefix.toUpperCase()}</a>)
     })
   }
 </ul>
