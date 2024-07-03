@@ -10,43 +10,43 @@ const { currentLocale } = Astro;
 ---
 
 <div class="flex items-center justify-center mt-12 bg-transparent">
-  <header class="fixed z-10">
+  <header class="fixed flex items-center z-10">
     <nav
       class="flex px-3 text-sm font-medium rounded-full text-black justify-center items-center"
     >
       <a
         class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
-        aria-label="hola"
+        aria-label="home"
         href={getRelativeLocaleUrl(currentLocale ?? "", "/")}
         rel="noreferrer noopener"
-        title="hola"
+        title="volver a home"
       >
         {t("nav.home")}
       </a>
       <a
         class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
-        aria-label="hola"
+        aria-label="projects"
         href={getRelativeLocaleUrl(currentLocale ?? "", "projects")}
         rel="noreferrer noopener"
-        title="hola"
+        title="ir a projects"
       >
         {t("nav.projects")}
       </a>
       <a
         class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
-        aria-label="hola"
+        aria-label="experience"
         href={getRelativeLocaleUrl(currentLocale ?? "", "experiencia")}
         rel="noreferrer noopener"
-        title="hola"
+        title="ir a experience"
       >
         {t("nav.experiencia")}
       </a>
       <a
         class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
-        aria-label="hola"
+        aria-label="about"
         href={getRelativeLocaleUrl(currentLocale ?? "", "about")}
         rel="noreferrer noopener"
-        title="hola"
+        title="ir a about"
       >
         {t("nav.about")}
       </a>
