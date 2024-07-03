@@ -8,7 +8,11 @@ import { type CollectionEntry, getCollection } from "astro:content";
 const allProjects: CollectionEntry<"proyecto">[] =
   await getCollection("proyecto");
 
-const otherProjects: CollectionEntry<"proyecto">[] = allProjects.slice(1);
+const espanishProjects = await getCollection("proyecto", ({ id }) => {
+  return id.startsWith("en/");
+});
+
+const otherProjects: CollectionEntry<"proyecto">[] = espanishProjects.slice(1);
 ---
 
 <MainLayout title="Portfolio Jos Villegas" description="UI and Web Designer">
@@ -18,7 +22,7 @@ const otherProjects: CollectionEntry<"proyecto">[] = allProjects.slice(1);
         <div class="flex flex-col gap-y-6">
           <h1 class="text-5xl font-bold text-gray-950">Hey, Soy Jos Lee</h1>
           <p class="text-base max-w-xl">
-            <strong class="text-amber-700">Diseniador UI y Web</strong> con mas de
+            <strong class="text-[#773300]">Diseñador UI y Web</strong> con mas de
             dos anios de experiencia en el rubro mediante el dictado de talleres
             a estudiantes de secundaria y la creacion de proyectos personales tanto
             para dispositivos moviles y web
