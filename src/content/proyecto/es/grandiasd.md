@@ -19,7 +19,7 @@ infmwireframe: "With the corrected sketches, the design of the medium fidelity w
 imgmwireframe: "../images/GrandMWireframe.webp"
 inftc: "For the typography, one that stands out in size compared to the basic one was used since it would help with reading and for the color part, it was thought to play with the variants of one that does not affect the visual capacity of the users."
 imgtc: "../images/GrandTc.webp"
-infgrid: "The system grid was defined to have harmony in the location of information and components within the mobile application"
+infgrid: ""
 imggrid: "../images/GrandGrid.webp"
 inficons: "Being an application for the IASD, the icons are related to the theme of religion and concepts about the church."
 imgicons: "../images/GrandIcons.webp"

@@ -19,7 +19,7 @@ infmwireframe: "By this stage we already have a better vision of how the app wil
 imgmwireframe: "../images/SportMWireframe.webp"
 inftc: "Being an application that will be used in a university, it had to comply with the company's representative colors and maintain harmony but change the typography and give it a more sporty tone."
 imgtc: "../images/SportTc.webp"
-infgrid: "The system grid was defined to have harmony in the location of information and components within the mobile application"
+infgrid: ""
 imggrid: "../images/SportGrid.webp"
 inficons: "Being a sports application, the icons had to be precise to want to inform the actions they carried out, whether or not with the presence of an accompanied text indicating the action."
 imgicons: "../images/SportIcons.webp"

@@ -19,7 +19,7 @@ infmwireframe: "After defining the user flows and how the main navigation was ca
 imgmwireframe: "../images/CMWireframe.webp"
 inftc: "So that harmony is maintained within the website and with the help of research on similar platforms, the colors and the typography used throughout the website were defined."
 imgtc: "../images/CTc.webp"
-infgrid: "The system grid was defined to have harmony in the location of information and components within the website"
+infgrid: ""
 imggrid: "../images/CGrid.webp"
 inficons: "Being a website for the health area, one of the key points were the icons, which had to have a relationship to what was wanted to be explained whether they presented a title or accompanied paragraph or none of these."
 imgicons: "../images/CIcons.webp"

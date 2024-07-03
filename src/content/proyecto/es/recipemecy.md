@@ -19,7 +19,7 @@ infmwireframe: "With the corrected sketches, the design of the medium fidelity w
 imgmwireframe: "../images/MecyMWireframe.webp"
 inftc: "As the core of the application was the recipe book, the font used had to be clearly readable and the colors to be used would be various to be able to distinguish between the types of foods to be searched."
 imgtc: "../images/MecyTc.webp"
-infgrid: "The system grid was defined to have harmony in the location of information and components within the mobile application"
+infgrid: ""
 imggrid: "../images/MecyGrid.webp"
 inficons: "In relation to the icons, only three were used since most of the design is taken by the images of each food"
 imgicons: "../images/MecyIcons.webp"
