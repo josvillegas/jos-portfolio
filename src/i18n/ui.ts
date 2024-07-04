@@ -10,7 +10,7 @@ export const ui = {
     "nav.home": "Inicio",
     "nav.projects": "Proyectos",
     "nav.experiencia": "Experiencia",
-    "nav.about": "Sobre mi",
+    "nav.about": "Sobre mí",
   },
   en: {
     "nav.home": "Home",

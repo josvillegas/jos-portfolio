@@ -2,7 +2,7 @@
   "experiencie": [
     {
       "name": "Dictado de Taller UI Desing",
-      "position": "Diseniador UI",
+      "position": "Diseñador UI",
       "startDate": "2021",
       "endDate": "2023",
       "summary": "Encargado de dictar el curso taller de UI Design en el colegio Sollertia, fomenté el diseño de sitios web o aplicaciones móviles como ayuda a las soluciones propuestas de cada alumno impulsando el uso de su creatividad",
@@ -15,7 +15,7 @@
     },
     {
       "name": "Dictado de Taller UI Desing",
-      "position": "Diseniador Web",
+      "position": "Diseñador Web",
       "startDate": "2021",
       "endDate": "2023",
       "summary": "Encargado de dictar el curso taller de Desarrollo Web en el colegio Sollertia, fomenté la creación de sitios web previamente diseñados por cada estudiante, impulsando su lógica y creatividad mediante el uso del código de etiquetas HTML y lenguaje de estilos CSS",
@@ -36,7 +36,7 @@
         "Preparar el análisis para el requerimiento seguimiento de prácticas, autoevaluación y fin de prácticas",
         "Desarrollar el requerimiento seguimiento de practicantes",
         "Desarrollar el requerimiento autoevaluación practicante",
-        "Desarrollar el requerimiento fin de practicas"
+        "Desarrollar el requerimiento fin de prácticas"
       ]
     }
   ]

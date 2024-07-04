@@ -24,9 +24,14 @@ const englishProjects = await getCollection("proyecto", ({ id }) => {
         englishProjects.map((proyecto) => (
           <div class="flex flex-col-reverse gap-x-12 gap-y-6 justify-center items-center mb-16 md:mb-20 p-3 md:flex-row">
             <div class="flex flex-col gap-4">
-              <h2 class="text-2xl font-bold text-gray-900">
+              <a
+                class="text-2xl font-bold text-gray-900 hover:underline"
+                href={`/en/projects/${proyecto.slug}`}
+                rel="noreferrer noopener"
+                title={`view ui ux design process - ${proyecto.data.title}`}
+              >
                 {proyecto.data.title}
-              </h2>
+              </a>
               <p class="text-sm text-gray-600 max-w-md">
                 {proyecto.data.description}
               </p>
@@ -35,7 +40,7 @@ const englishProjects = await getCollection("proyecto", ({ id }) => {
                 <div class="">
                   <ul class="flex gap-x-4">
                     {proyecto.data.tags.map((tag: string, index: number) => (
-                      <li class="bg-[#727272] text-white font-bold py-0.5 px-2 rounded-lg border border-[#727272] text-xs">
+                      <li class="bg-[#464646] text-[#e5dede] font-bold py-0.5 px-2 rounded-lg border border-[#464646] text-xs">
                         {tag}
                       </li>
                     ))}
@@ -54,7 +59,7 @@ const englishProjects = await getCollection("proyecto", ({ id }) => {
                 alt="proyecto01"
                 width="100%"
                 height="100%"
-                title={`Imagen del proyecto - ${proyecto.data.title}`}
+                title={`view ui ux design process - ${proyecto.data.title}`}
               />
             </a>
           </div>
