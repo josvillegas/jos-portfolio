@@ -174,36 +174,15 @@ if (entry === undefined) {
           {
             entry.data.urlfigma && (
               <>
-                <p>
-                  Para ver el disenio en figma clic en
-                  <a
-                    class="font-black"
-                    href={entry.data.urlfigma}
-                    target="_blank"
-                    title="Visitar Figma del proyecto"
-                    rel="noreferrer noopener"
-                  >
-                    prototipo
-                  </a>
-                </p>
-              </>
-            )
-          }
-          {
-            entry.data.urlpreview && (
-              <>
-                <p>
-                  Para ver otros detalles clic en
-                  <a
-                    class="font-black"
-                    href={entry.data.urlpreview}
-                    target="_blank"
-                    title="Visitar Repositorio o Sitio Web"
-                    rel="noreferrer noopener"
-                  >
-                    repositorio o vista previa
-                  </a>
-                </p>
+                <a
+                  class="font-black underline"
+                  href={entry.data.urlfigma}
+                  target="_blank"
+                  title="Visitar Figma del proyecto"
+                  rel="noreferrer noopener"
+                >
+                  ver prototipo final
+                </a>
               </>
             )
           }

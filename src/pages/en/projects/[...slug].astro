@@ -162,42 +162,23 @@ if (entry === undefined) {
       </div>
       <!-- High Fidelity Prototype -->
       <div class="my-20 space-y-4">
-        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">Prototype</h5>
+        <h5 class="text-black text-xl max-w-3xl m-auto font-bold">
+          Hi-Fi Prototype
+        </h5>
         <p class="max-w-3xl m-auto pb-6">{entry.data.infprocess}</p>
         <div class="max-w-3xl m-auto space-y-1">
           {
             entry.data.urlfigma && (
               <>
-                <p>
-                  Para ver el disenio en figma clic en
-                  <a
-                    class="font-black"
-                    href={entry.data.urlfigma}
-                    target="_blank"
-                    title="Visitar Figma del proyecto"
-                    rel="noreferrer noopener"
-                  >
-                    prototipo
-                  </a>
-                </p>
-              </>
-            )
-          }
-          {
-            entry.data.urlpreview && (
-              <>
-                <p>
-                  Para ver otros detalles clic en
-                  <a
-                    class="font-black"
-                    href={entry.data.urlpreview}
-                    target="_blank"
-                    title="Visitar Repositorio o Sitio Web"
-                    rel="noreferrer noopener"
-                  >
-                    repositorio o vista previa
-                  </a>
-                </p>
+                <a
+                  class="font-black"
+                  href={entry.data.urlfigma}
+                  target="_blank"
+                  title="Visitar Figma del proyecto"
+                  rel="noreferrer noopener"
+                >
+                  view final prototype
+                </a>
               </>
             )
           }
